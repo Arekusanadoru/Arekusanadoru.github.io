@@ -5,7 +5,23 @@ function mainContent() {
 }
 function aboutContent() {
     return `
-        <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</span><img src="images/main1.jpg" width="200">
+        <span>Стоматологическая клиника "Zubov.net" была основана в 2010 году стоматологом-терапевтом
+Зубовым Александром Александровичем и его сыном Зубовым Матвеем Александровичем.
+Перспектива работать в государственных медицинских учреждениях не привлекала ни
+младшего, ни старшего Зубова, на то есть ряд существенных причин.
+Александр Александрович считает, что в век технологий людям нужно предоставлять самые
+качественные услуги в области стоматологии. Для этого необходимы зарубежные
+оборудование и медикаменты,  а отечественные аналоги найти достаточно сложно.
+"(курсивом) В собственной организации ты должен предоставить пациентам такие условия, в
+которых было бы комфортно самому. Я не хочу лечить свои зубы отечественным материалом,
+которого вечно не хватает в больницах. Я хочу, чтобы пациент пришел ко мне с проблемой, а я
+раз - и смог решить эту проблему, потому что у меня есть все - и оборудование, и медикаменты,
+и материалы, и приятная обстановка!"
+                                                                                                                                              Зубов А.А.
+В стоматологии работают 3 стоматолога-терапевта, 2 стоматолога-хирурга, 2 имплантолога.
+Все врачи имеют высшие квалификационные категории. К сожалению, отсутствует детский
+стоматолог, но эта проблема уже устраняется. Более подробную информацию о специалистах
+Вы можете прочитать в разделе "ВРАЧИ".</span><img src="images/main1.jpg" width="200">
     `
 }
 function priceContent() {
