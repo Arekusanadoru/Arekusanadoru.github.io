@@ -19,7 +19,7 @@ function selectThisSection(id) {
 }
 function fillNavMenu() {
     $('.header_nav').append(`<ul>
-        ${data.reduce((a, b) => a + `<li id="${b.id}" name="section">${b.name}</li>`, '')};
+        ${data.reduce((a, b) => a + `<li id="${b.id}" name="section">${b.name}</li>`, '')}
     </ul>`)
 }
 function fillMainSection(id) {
