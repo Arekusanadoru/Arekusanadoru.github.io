@@ -26,7 +26,7 @@ function aboutContent() {
 }
 function priceContent() {
     return `
-        <span>Цены</span>
+        <span>аааааааа</span>
     `
 }
 function stocksContent() {
