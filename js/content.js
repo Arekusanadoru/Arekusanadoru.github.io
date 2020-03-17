@@ -36,7 +36,8 @@ function stocksContent() {
 }
 function personalContent() {
     return `
-        <span>.
+        <span><p>Информация о врачах, их интересах, все такое даб даб ну вы поняли</p>
+<p>*всякие няшные фоточки*</p>
 </span>
     `
 }
