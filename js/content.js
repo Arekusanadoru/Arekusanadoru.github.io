@@ -1,6 +1,6 @@
 function mainContent() {
     return `
-        <span>Главная</span>
+        <span>Фотографии из стоматологии с баннерами акций. фото для примера<img src="images/bg.jpg" width="100%"> </span>
     `
 }
 function aboutContent() {
