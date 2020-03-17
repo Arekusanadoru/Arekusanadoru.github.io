@@ -109,6 +109,7 @@ html, body {
   border-radius: 10px;
   -webkit-box-shadow: 0 0 2px lightgray;
           box-shadow: 0 0 2px lightgray;
+display: flex;
 }
 
 .page main .main_content {
