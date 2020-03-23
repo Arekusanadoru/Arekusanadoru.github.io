@@ -220,3 +220,5 @@ display: flex;
   width: 100%;
 }
 /*# sourceMappingURL=style.css.map */
+.rightimg  {
+    float: right; /* Выравнивание по правому краю  */
