@@ -221,4 +221,7 @@ display: flex;
 }
 /*# sourceMappingURL=style.css.map */
 .rightimg  {
-    float: right; /* Выравнивание по правому краю  */
+    float: right;}
+    .leftimg {
+      float:left;
+      } /* Выравнивание по правому краю  */
