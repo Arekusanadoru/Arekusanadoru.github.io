@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <title>Zubov.net</title>
-
     <script src="js/jquery.min.js"></script>
     <script src="js/calendar.js"></script>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+
   <script>
     alert( "Спасибо, что посетили страницу нашего сайта!" );
   </script>
@@ -26,7 +26,7 @@
                                 <span>8 (800) 555-35-35</span>
                             </div>
                             <div class="general_info">
-                              <a href="">  <img src="images/icons8-address.svg" alt="">
+                              <a href="#buttom">  <img src="images/icons8-address.svg"  href=alt="">
                                 <span>г. Новосибирск, ул. Восход, д. 9</span></a>
                             </div>
                             <div class="general_info">
@@ -80,9 +80,25 @@
                             <a href="https://ok.ru/profile/500251949064" target="_blank"><img src="images/ok.svg" alt=""></a>
                         </div>
                         <div class="inside_block">
-                            <button class="btn btn-footer">Записаться на приём</button>
+                            <button class="btn btn-footer" onclick="openForm()">Записаться на приём</button>
+                            <div class="form-popup" id="myForm">
+                              <label><b>Выберите дату<br></b></label>
+                              <input type="text" value="dd-mm-yy" onfocus="this.select();lcs(this)"
+                                onclick="event.cancelBubble=true;this.select();lcs(this)">
+     <form action="#" class="form-container">
+       <label for="name"><b>Имя</b></label>
+       <input type="text" placeholder="Ваше имя" name="name" required>
+       <label for="email"><b>Е-мейл</b></label>
+       <input type="text" placeholder="Ваш е-мейл" name="email" required>
+       <button type="submit" class="btn">Записаться</button>
+       <button type="button" class="btn cancel" onclick="closeForm()">Записаться позже</button>
+     </form>
+    </div>
+                        </div>
                         </div>
                     </div>
+                    <p font-size: "20" align="center">Наше местоположение</p>
+                      <p align="middle"><a name="buttom"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2287.6070950060052!2d82.94136231536362!3d55.01505205611466!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x42dfe60cba096ecd%3A0x2b519b75a8f1a96f!2z0YPQuy4g0JLQvtGB0YXQvtC0LCA5LCDQndC-0LLQvtGB0LjQsdC40YDRgdC6LCDQndC-0LLQvtGB0LjQsdC40YDRgdC60LDRjyDQvtCx0LsuLCA2MzAxMDI!5e0!3m2!1sru!2sru!4v1585150577876!5m2!1sru!2sru" width="80%" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe></a></p>
                 </div>
             </div>
         </footer>
