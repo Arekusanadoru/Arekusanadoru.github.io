@@ -107,3 +107,9 @@ for (i=0;i<=snowmax;i++) {
 if (browserok) {
     window.onload=initsnow;
 }
+
+function openForm() {
+   document.getElementById("myForm").style.display = "block"; }
+   function closeForm() {
+   document.getElementById("myForm").style.display = "none";
+} 
