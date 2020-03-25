@@ -27,7 +27,7 @@ function aboutContent() {
 function priceContent() {
     return `
         <span style="font-size: 15px; line-height: 2">
-<p style="font-size: 19px"><font color="#0000ff"> <img src="images/price_content.jpg" width="200" height="150" class="rightimg">В стоматологии "Zubov.net" предоставляются следующие услуги:</font></p>
+<p style="font-size: 19px"><font color="#0000ff"> <img src="images/price_content.jpg" width="400" height="600" class="rightimg">В стоматологии "Zubov.net" предоставляются следующие услуги:</font></p>
 <p style="font-weight: bold">Лечение зубов:</p>
 <p>-Кариес</p>
 <p>-Пульпит</p>
