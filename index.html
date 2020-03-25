@@ -5,10 +5,10 @@
     <title>Zubov.net</title>
 
     <script src="js/jquery.min.js"></script>
+    <script src="js/calendar.js"></script>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-
   <script>
     alert( "Спасибо, что посетили страницу нашего сайта!" );
   </script>
@@ -36,8 +36,11 @@
                         </div>
                     </div>
                     <div class="header_block">
-                        <button class="btn" onclick="openForm()">Записаться на приём</button>
+                        <button class="btn" onclick="openForm() ">Записаться на приём</button>
                         <div class="form-popup" id="myForm">
+                          <label><b>Выберите дату<br></b></label>
+                          <input type="text" value="dd-mm-yy" onfocus="this.select();lcs(this)"
+                            onclick="event.cancelBubble=true;this.select();lcs(this)">
  <form action="#" class="form-container">
    <label for="name"><b>Имя</b></label>
    <input type="text" placeholder="Ваше имя" name="name" required>
