@@ -57,19 +57,3 @@ function clearForm(name) {
 		f.elements[i].checked = false;
 }
 }
-<h1>document.write(title)</h1>
-<h2>document.write(subtitle)</h2>
-<form name="quiz">
-<ol>
-for(var q=0; q<questions.length; ++q) {
-	 var question = questions[q];
-	 var idx = 1 + q;
-	 document.writeln('<li><span class="quest">' + question.text + '</span><br/>');
-	 for(var i in question.answers) {
-	document.writeln('<input type=radio name="q' + idx + '" value="' + i +
-	'" onClick="Engine(' + q + ', this.value)">' + question.answers[i] + '<br/>');
-}
-}
-</ol>
-<input type="button" onClick="Score()" value="Проверить результаты" />
-</form>

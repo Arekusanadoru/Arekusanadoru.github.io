@@ -164,8 +164,25 @@ function jobContent() {
     `
 }
 function interactive() {
-`
-
-`
-
+    function fill() {
+        let content = ''
+        for(var q=0; q<questions.length; ++q) {
+            var question = questions[q];
+            var idx = 1 + q;
+            content += '<li><span class="quest">' + question.text + '</span><br/>';
+            for(var i in question.answers) {
+                content += '<input type=radio name="q' + idx + '" value="' + i +
+                '" onClick="Engine(' + q + ', this.value)">' + question.answers[i] + '<br/>';
+            }
+       }
+       return content;
+    }
+return `
+<h1>Тест на пидора</h1>
+<form name="quiz">
+<ol>
+${fill()}
+</ol>
+<input type="button" onClick="Score()" value="Проверить результаты" />
+</form>`
 }
