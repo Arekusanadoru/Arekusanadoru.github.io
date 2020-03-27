@@ -5,4 +5,5 @@ let data = [
     {active: false, name: 'Акции', id: 'stocks', content: stocksContent},
     {active: false, name: 'Врачи', id: 'personal', content: personalContent},
     {active: false, name: 'Вакансии', id: 'job', content: jobContent},
+    {active:false, name: 'Интерактив', id:'interactive',content: interactive}
 ]
