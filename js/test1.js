@@ -1,26 +1,66 @@
 var subtitle = "Этот тест позволяет понять кто молодец а кто пидор";
 var questions=[
 {
-	text: "Света молодец?",
+	text: "Вы стали замечать, что десны иногда кровоточат при чистке зубов?",
 	answers: ["нет",
-			"да",
-			"ясен хуй да"],
-	correctAnswer: 2
+			"да"],
+	correctAnswer: 0
 },
 {
-	text: "Ты пидор?",
-	answers: ["да",
-			"нет",
-			"не определился"],
+	text: "Реагируют ли зубы на сладкое, кислое, горячее, холодное?",
+	answers: ["нет",
+			"да"],
+	correctAnswer: 0
+},
+{
+	text: "Вы редко простужаетесь, подхватываете гайморит или ангину?",
+	answers: ["нет",
+			"да"],
 	correctAnswer: 1
 },
 {
-	text: "Романовский пидор?",
-	answers: ["Да",
-			"нет",
-			"не спрашивал"],
+	text: "Посещаете стоматолога не реже раза в год?",
+	answers: ["нет",
+			"да"],
+	correctAnswer: 1
+},
+{
+	text: "На трех или более зубах у вас уже стояли пломбы к 20 годам?",
+	answers: ["нет",
+			"да"],
 	correctAnswer: 0
-}
+},
+{
+	text: "Правильный ли у вас прикус?",
+	answers: ["нет",
+			"да"],
+	correctAnswer: 1
+},
+{
+	text: "После еды стараетесь если не почистить зубы, то хотя бы тщательно прополоскать рот или пожевать жвачку?",
+	answers: ["нет",
+			"да"],
+	correctAnswer: 1
+},
+{
+	text: "Частенько грызете семечки, используете свои челюсти в качестве «орехоколки»?",
+	answers: ["нет",
+			"да"],
+	correctAnswer: 0
+},
+{
+	text: "Принадлежите ли к отряду курильщиков?",
+	answers: ["нет",
+			"да"],
+	correctAnswer: 0
+},
+{
+	text: "Страдаете ли вы проблемами с пищеварением?",
+	answers: ["нет",
+			"да"],
+	correctAnswer: 0
+},
+
 ];
 
 var yourAns = new Array;
@@ -30,20 +70,19 @@ function Engine(question, answer) {yourAns[question]=answer;}
 
 function Score(){
 	 var answerText = "Результаты:\n";
+	 var sum = 10;
 	 for(var i = 0; i < yourAns.length; ++i){
 	var num = i+1;
-	answerText=answerText+"\n    Вопрос №"+ num +"";
-	if(yourAns[i]!=questions[i].correctAnswer){
-			answerText=answerText+"\n    Правильный ответ: " +
-		questions[i].answers[questions[i].correctAnswer] + "\n";
-		}
-				else{
-			answerText=answerText+": Верно! \n";
+	if(yourAns[i]==questions[i].correctAnswer){
 			++score;
-			}
+		}
 			 }
+if(score==sum){
+	answerText="Зубы в порядке, поздравляем Вас :)";}
 
-	 answerText=answerText+"\nВсего правильных ответов: "+score+"\n";
+	else{
+		answerText="Зубы не в порядке, обратитесь к специалистам"
+	}
 
 	 alert(answerText);
 	 yourAns = [];

@@ -178,7 +178,7 @@ function interactive() {
        return content;
     }
 return `
-<h1>Тест на пидора</h1>
+<h1>Тест. В порядке ли Ваши зубы?</h1>
 <form name="quiz">
 <ol>
 ${fill()}
