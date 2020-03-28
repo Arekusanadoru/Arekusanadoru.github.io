@@ -185,4 +185,5 @@ ${fill()}
 </ol>
 <input type="button" onClick="Score()" value="Проверить результаты" />
 </form>`
+
 }
