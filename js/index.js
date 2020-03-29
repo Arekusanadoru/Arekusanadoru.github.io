@@ -113,7 +113,7 @@ function openForm() {
    function closeForm() {
    document.getElementById("myForm").style.display = "none";
 }
-/* Индекс слайда по умолчанию */
+
 var slideIndex = 1;
 showSlides(slideIndex);
 

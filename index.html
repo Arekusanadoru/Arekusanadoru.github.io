@@ -60,6 +60,15 @@
    <button type="button" class="btn cancel" onclick="closeForm()">Записаться позже</button>
  </form>
 </div>
+<script>
+$(document).mouseup(function (e){
+        var div = $('.form-popup');
+        if (!div.is(e.target)
+            && div.has(e.target).length === 0) {
+            div.hide();
+        }
+    });
+</script>
                     </div>
                 </div>
                 <div class="header_nav"></div>
