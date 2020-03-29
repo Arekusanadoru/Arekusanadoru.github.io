@@ -178,7 +178,7 @@ function interactive() {
        return content;
     }
 return `
-<h1>Тест. В порядке ли Ваши зубы?</h1>
+<p>Тест. В порядке ли Ваши зубы?</p>
 <form name="quiz">
 <ol>
 ${fill()}
