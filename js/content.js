@@ -1,6 +1,8 @@
 function mainContent() {
     return `
-        <span>ЛАЛАЛАЛАЛЕНД. фото для примера<img src="images/bg.jpg" width="100%"> </span>
+        <span style="font-size: 18px; font-weight: bold">Размещение изображений с акциями </br>
+Рекомендуем пройти тест во вкладке "Интерактив"
+        <img src="images/bg.jpg" width="100%"> </span>
     `
 }
 function aboutContent() {
@@ -178,12 +180,21 @@ function interactive() {
        return content;
     }
 return `
-<p>Тест. В порядке ли Ваши зубы?</p>
+<pre style="font-weight: bold;text-align: center; font-size: 25px">                               Тест. В порядке ли Ваши зубы?</pre>
 <form name="quiz">
 <ol>
 ${fill()}
 </ol>
 <input type="button" onClick="Score()" value="Проверить результаты" />
-</form>`
-
+</form>
+</br>
+</br>
+</br>
+</br>
+<p style="Font-weight: bold; font-size: 19px;">Здесь вы можете оставить свой комментарий</p>
+<div id="vk_comments"></div>
+<script type="text/javascript">
+VK.Widgets.Comments("vk_comments", {limit: 20, attach: "*"});
+</script>
+`
 }
