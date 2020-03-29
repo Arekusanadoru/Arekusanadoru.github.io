@@ -2,7 +2,28 @@ function mainContent() {
     return `
         <span style="font-size: 18px; font-weight: bold">Размещение изображений с акциями </br>
 Рекомендуем пройти тест во вкладке "Интерактив"
-        <img src="images/bg.jpg" width="100%"> </span>
+<div class="slider">
+    <div class="item">
+        <img src="images/main111.jpg" alt="Первый слайд">
+    </div>
+
+    <div class="item">
+        <img src="images/vrach1.jpg" alt="Второй слайд">
+    </div>
+
+    <div class="item">
+        <img src="images/vrach2.jpg" alt="Третий слайд">
+    </div>
+
+    <a class="prev" onclick="minusSlide()">&#10094;</a>
+    <a class="next" onclick="plusSlide()">&#10095;</a>
+</div>
+
+<div class="slider-dots">
+    <span class="slider-dots_item" onclick="currentSlide(1)"></span>
+    <span class="slider-dots_item" onclick="currentSlide(2)"></span>
+    <span class="slider-dots_item" onclick="currentSlide(3)"></span>
+</div>
     `
 }
 function aboutContent() {
@@ -185,7 +206,8 @@ return `
 <ol>
 ${fill()}
 </ol>
-<input type="button" onClick="Score()" value="Проверить результаты" />
+</br>
+<input type="button" class="btn" onClick="Score()" value="Проверить результаты" />
 </form>
 </br>
 </br>

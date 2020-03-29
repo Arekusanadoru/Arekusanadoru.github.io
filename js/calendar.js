@@ -139,7 +139,7 @@ var calvalarr=new Array(42);
 
 function f_cps(obj) {
   obj.style.background='#FFFFFF';
-  obj.style.font='10px Arial';
+  obj.style.font='25px Arial';
   obj.style.color='#333333';
   obj.style.textAlign='center';
   obj.style.textDecoration='none';
@@ -149,7 +149,7 @@ function f_cps(obj) {
 
 function f_cpps(obj) {
   obj.style.background='#C4D3EA';
-  obj.style.font='10px Arial';
+  obj.style.font='25px Arial';
   obj.style.color='#FF9900';
   obj.style.textAlign='center';
   obj.style.textDecoration='line-through';
@@ -159,7 +159,7 @@ function f_cpps(obj) {
 
 function f_hds(obj) {
   obj.style.background='#FFF799';
-  obj.style.font='bold 10px Arial';
+  obj.style.font='bold 25px Arial';
   obj.style.color='#333333';
   obj.style.textAlign='center';
   obj.style.border='1px solid #6487AE';
