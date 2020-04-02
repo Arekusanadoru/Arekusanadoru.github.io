@@ -20,6 +20,17 @@
   <script>
     smoke.alert("Спасибо, что посетили страницу нашего сайта!" );
   </script>
+  <script>
+  document.addEventListener("DOMContentLoaded", function() {
+    document.querySelectorAll('textarea, input').forEach(function(e) {
+        if(e.value === '') e.value = window.sessionStorage.getItem(e.name, e.value);
+        e.addEventListener('input', function() {
+            window.sessionStorage.setItem(e.name, e.value);
+        })
+    })
+
+});
+</script>
     <div class="page">
         <header>
           <a name ="top"><div class="header_content"></a>
@@ -104,7 +115,7 @@ $(document).mouseup(function (e){
                               <label><b>Выберите дату<br></b></label>
                               <input type="text" value="dd-mm-yy" onfocus="this.select();lcs(this)"
                                 onclick="event.cancelBubble=true;this.select();lcs(this)">
-     <form action="#" class="form-container">
+     <form action="action.php" method="get" class="form-container">
        <label for="name"><b>Имя</b></label>
        <input type="text" placeholder="Ваше имя" name="name" required>
        <label for="email"><b>Е-мейл</b></label>
