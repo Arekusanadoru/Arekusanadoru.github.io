@@ -170,28 +170,6 @@ display: flex;
   cursor: pointer;
 }
 
-@media (max-width: 1120px) {
-  .page header .header_content .header_nav ul li {
-    font-size: 13px;
-    height: 30px;
-    line-height: 30px;
-  }
-}
-
-@media (max-width: 1000px) {
-  .page header .header_content .header_nav ul {
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-  }
-  .page header .header_content .header_nav ul li {
-    margin-right: 0;
-    font-size: 13px;
-    height: 30px;
-    line-height: 30px;
-  }
-}
-
 .color {
   color: #FC7F37;
 }
