@@ -50,20 +50,29 @@
                             </div>
                             <div class="general_info">
                                 <img src="images/icons8-email.svg" alt="">
-                                <span>maestro9932@icloud.com</span>
+                                <span>maestro992@icloud.com</span>
                             </div>
                         </div>
                     </div>
                     <div class="header_block">
-                      <a href="registr.html" alt=""><button class="btn">Вход</button></a></br>
+                      <form action="action.php" method="get">
+   <p width = "300px" ><select size="1" name="lang">
+    <option value="en">English</option>
+    <option selected value="fr">French</option>
+    <option value="de">Deutch</option>
+    <option value="ru">Русский</option>
+   </select></p>
+   <p><input type="submit" value="Выбрать"></p>
+  </form>
+  </form>
                     </br>
                         <button class="btn" onclick="openForm() ">Записаться на приём</button>
                         <div class="form-popup" id="myForm">
-                          <form action="#" class="form-container">
+                          <form action="action.php" method="post" class="form-container">
                           <label><b>Выберите дату<br></b></label>
                           <input type="text" value="dd-mm-yy" onfocus="this.select();lcs(this)"
                             onclick="event.cancelBubble=true;this.select();lcs(this)">
-   <label for="name"><b>Имя</b></label>
+   <label for="name"><b>Ваше имя</b></label>
    <input type="text" placeholder="Ваше имя" name="name" required>
    <label for="email"><b>Е-мейл</b></label>
    <input type="text" placeholder="Ваш е-мейл" name="email" required>
@@ -115,12 +124,12 @@ $(document).mouseup(function (e){
                               <label><b>Выберите дату<br></b></label>
                               <input type="text" value="dd-mm-yy" onfocus="this.select();lcs(this)"
                                 onclick="event.cancelBubble=true;this.select();lcs(this)">
-     <form action="action.php" method="post" class="form-container">
+     <form class="form-container">
        <label for="name"><b>Имя</b></label>
        <input type="text" placeholder="Ваше имя" name="name" required>
        <label for="email"><b>Е-мейл</b></label>
        <input type="text" placeholder="Ваш е-мейл" name="email" required>
-       <button type="submit" class="btn">Записаться</button>
+       <button type="submit"  action="action.php" method="get" class="btn">Записаться</button>
        <button type="button" class="btn cancel" onclick="closeForm()">Записаться позже</button>
      </form>
     </div>
